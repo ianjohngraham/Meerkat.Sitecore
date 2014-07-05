@@ -16,6 +16,8 @@ MPORTANT - Post Installation Notes
 After installation you must add the following non-invasive changes to your Sitecore Web.Config.
 
 Add the following binding redirects in your <runtime> tag - this is needed for signalr to work
+
+
  &lt;assemblyIdentity name=&quot;Microsoft.Owin&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; culture=&quot;neutral&quot;&gt;
       &lt;dependentAssembly&gt;
         &lt;bindingRedirect oldVersion=&quot;0.0.0.0-2.0.2.0&quot; newVersion=&quot;2.0.2.0&quot; /&gt;
@@ -29,6 +31,8 @@ Add the following binding redirects in your <runtime> tag - this is needed for s
         &lt;bindingRedirect oldVersion=&quot;0.0.0.0-2.0.3.0&quot; newVersion=&quot;2.0.3.0&quot; /&gt;
       &lt;/dependentAssembly&gt;
     &lt;/assemblyBinding&gt;
+
+
 
 Then the entry /signalr to the end of the  IgnoreUrlPrefixes setting
 
