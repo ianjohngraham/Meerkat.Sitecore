@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meerkat.Sitecore.Service", "Meerkat.Sitecore.Service\Meerkat.Sitecore.Service.csproj", "{8C324E00-CB4A-4385-827A-E44735F58F4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meerkat.Sitecore.Client", "Meerkat.Sitecore.Client\Meerkat.Sitecore.Client.csproj", "{609755D7-AE30-4E40-985B-5EF3C7471E81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meerkat.Sitecore.SelfHost", "Meerkat.Sitecore.SelfHost\Meerkat.Sitecore.SelfHost.csproj", "{47921E26-6407-425B-B171-1C784AED2583}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeerKat.Sitecore.ItemComparer", "Meerkat.Sitecore.ItemComparer\Meerkat.Sitecore.ItemComparer.csproj", "{148CE320-BD2A-466E-97C4-BC2CF21F205D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C324E00-CB4A-4385-827A-E44735F58F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C324E00-CB4A-4385-827A-E44735F58F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C324E00-CB4A-4385-827A-E44735F58F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C324E00-CB4A-4385-827A-E44735F58F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609755D7-AE30-4E40-985B-5EF3C7471E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609755D7-AE30-4E40-985B-5EF3C7471E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609755D7-AE30-4E40-985B-5EF3C7471E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609755D7-AE30-4E40-985B-5EF3C7471E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47921E26-6407-425B-B171-1C784AED2583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47921E26-6407-425B-B171-1C784AED2583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47921E26-6407-425B-B171-1C784AED2583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47921E26-6407-425B-B171-1C784AED2583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{148CE320-BD2A-466E-97C4-BC2CF21F205D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{148CE320-BD2A-466E-97C4-BC2CF21F205D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{148CE320-BD2A-466E-97C4-BC2CF21F205D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{148CE320-BD2A-466E-97C4-BC2CF21F205D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="IanTest_masterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'IanTest_master.dbo.History' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="History">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Category" />
+            <PropertyRef Name="Action" />
+            <PropertyRef Name="ItemId" />
+            <PropertyRef Name="ItemLanguage" />
+            <PropertyRef Name="ItemVersion" />
+            <PropertyRef Name="ItemPath" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="TaskStack" />
+            <PropertyRef Name="AdditionalInfo" />
+            <PropertyRef Name="Created" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Category" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Action" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ItemId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ItemLanguage" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ItemVersion" Type="int" Nullable="false" />
+          <Property Name="ItemPath" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="TaskStack" Type="varchar(max)" Nullable="false" />
+          <Property Name="AdditionalInfo" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'IanTest_master.dbo.Items' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Items">
+          <Key>
+            <PropertyRef Name="ID" />
+            
+            
+            
+            
+            
+            
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="TemplateID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MasterID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ParentID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="Updated" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'IanTest_master.dbo.SharedFields' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="SharedFields">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ItemId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="FieldId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="Updated" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'IanTest_master.dbo.UnversionedFields' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="UnversionedFields">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ItemId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Language" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FieldId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="Updated" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'IanTest_master.dbo.VersionedFields' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="VersionedFields">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="ItemId" />
+            <PropertyRef Name="FieldId" />
+            
+            
+            
+            
+            
+            
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ItemId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Language" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Version" Type="int" Nullable="false" />
+          <Property Name="FieldId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Created" Type="datetime" Nullable="false" />
+          <Property Name="Updated" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="IanTest_masterModelStoreContainer">
+          <EntitySet Name="History" EntityType="Self.History" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[History].[Id] AS [Id], 
+[History].[Category] AS [Category], 
+[History].[Action] AS [Action], 
+[History].[ItemId] AS [ItemId], 
+[History].[ItemLanguage] AS [ItemLanguage], 
+[History].[ItemVersion] AS [ItemVersion], 
+[History].[ItemPath] AS [ItemPath], 
+[History].[UserName] AS [UserName], 
+[History].[TaskStack] AS [TaskStack], 
+[History].[AdditionalInfo] AS [AdditionalInfo], 
+[History].[Created] AS [Created]
+FROM [dbo].[History] AS [History]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Items" EntityType="Self.Items" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[Items].[ID] AS [ID], 
+[Items].[Name] AS [Name], 
+[Items].[TemplateID] AS [TemplateID], 
+[Items].[MasterID] AS [MasterID], 
+[Items].[ParentID] AS [ParentID], 
+[Items].[Created] AS [Created], 
+[Items].[Updated] AS [Updated]
+FROM [dbo].[Items] AS [Items]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="SharedFields" EntityType="Self.SharedFields" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[SharedFields].[Id] AS [Id], 
+[SharedFields].[ItemId] AS [ItemId], 
+[SharedFields].[FieldId] AS [FieldId], 
+[SharedFields].[Value] AS [Value], 
+[SharedFields].[Created] AS [Created], 
+[SharedFields].[Updated] AS [Updated]
+FROM [dbo].[SharedFields] AS [SharedFields]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UnversionedFields" EntityType="Self.UnversionedFields" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[UnversionedFields].[Id] AS [Id], 
+[UnversionedFields].[ItemId] AS [ItemId], 
+[UnversionedFields].[Language] AS [Language], 
+[UnversionedFields].[FieldId] AS [FieldId], 
+[UnversionedFields].[Value] AS [Value], 
+[UnversionedFields].[Created] AS [Created], 
+[UnversionedFields].[Updated] AS [Updated]
+FROM [dbo].[UnversionedFields] AS [UnversionedFields]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VersionedFields" EntityType="Self.VersionedFields" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[VersionedFields].[Id] AS [Id], 
+[VersionedFields].[ItemId] AS [ItemId], 
+[VersionedFields].[Language] AS [Language], 
+[VersionedFields].[Version] AS [Version], 
+[VersionedFields].[FieldId] AS [FieldId], 
+[VersionedFields].[Value] AS [Value], 
+[VersionedFields].[Created] AS [Created], 
+[VersionedFields].[Updated] AS [Updated]
+FROM [dbo].[VersionedFields] AS [VersionedFields]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="IanTest_masterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TemplateID" Type="Guid" Nullable="false" />
+          <Property Name="MasterID" Type="Guid" Nullable="false" />
+          <Property Name="ParentID" Type="Guid" Nullable="false" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Histories" Relationship="IanTest_masterModel.ItemHistory" FromRole="Item" ToRole="History" />
+          <NavigationProperty Name="VersionedFields" Relationship="IanTest_masterModel.ItemVersionedField" FromRole="Item" ToRole="VersionedField" />
+          <NavigationProperty Name="SharedFields" Relationship="IanTest_masterModel.ItemSharedField" FromRole="Item" ToRole="SharedField" />
+          <NavigationProperty Name="UnversionedFields" Relationship="IanTest_masterModel.ItemUnversionedField" FromRole="Item" ToRole="UnversionedField" />
+        </EntityType>
+        <EntityContainer Name="MasterEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Items" EntityType="Self.Item" />
+          <EntitySet Name="Histories" EntityType="IanTest_masterModel.History" />
+          <AssociationSet Name="ItemHistory" Association="IanTest_masterModel.ItemHistory">
+            <End Role="Item" EntitySet="Items" />
+            <End Role="History" EntitySet="Histories" />
+          </AssociationSet>
+          <EntitySet Name="VersionedFields" EntityType="IanTest_masterModel.VersionedField" />
+          <AssociationSet Name="ItemVersionedField" Association="IanTest_masterModel.ItemVersionedField">
+            <End Role="Item" EntitySet="Items" />
+            <End Role="VersionedField" EntitySet="VersionedFields" />
+          </AssociationSet>
+          <EntitySet Name="SharedFields" EntityType="IanTest_masterModel.SharedField" />
+          <EntitySet Name="UnversionedFields" EntityType="IanTest_masterModel.UnversionedField" />
+          <AssociationSet Name="ItemSharedField" Association="IanTest_masterModel.ItemSharedField">
+            <End Role="Item" EntitySet="Items" />
+            <End Role="SharedField" EntitySet="SharedFields" />
+          </AssociationSet>
+          <AssociationSet Name="ItemUnversionedField" Association="IanTest_masterModel.ItemUnversionedField">
+            <End Role="Item" EntitySet="Items" />
+            <End Role="UnversionedField" EntitySet="UnversionedFields" />
+          </AssociationSet>
+          <AssociationSet Name="VersionedFieldItem" Association="IanTest_masterModel.VersionedFieldItem">
+            <End Role="VersionedField" EntitySet="VersionedFields" />
+            <End Role="Item" EntitySet="Items" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="History">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Category" />
+            <PropertyRef Name="Action" />
+            <PropertyRef Name="ItemId" />
+            <PropertyRef Name="ItemLanguage" />
+            <PropertyRef Name="ItemVersion" />
+            <PropertyRef Name="ItemPath" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="TaskStack" />
+            <PropertyRef Name="AdditionalInfo" />
+            <PropertyRef Name="Created" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Category" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Action" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ItemId" Type="Guid" Nullable="false" />
+          <Property Name="ItemLanguage" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ItemVersion" Type="Int32" Nullable="false" />
+          <Property Name="ItemPath" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="TaskStack" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="AdditionalInfo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Item" Relationship="IanTest_masterModel.ItemHistory" FromRole="History" ToRole="Item" />
+        </EntityType>
+        <Association Name="ItemHistory">
+          <End Type="IanTest_masterModel.Item" Role="Item" Multiplicity="1" />
+          <End Type="IanTest_masterModel.History" Role="History" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="History">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="VersionedField">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="ItemId" />
+            <PropertyRef Name="FieldId" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ItemId" Type="Guid" Nullable="false" />
+          <Property Name="Language" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Version" Type="Int32" Nullable="false" />
+          <Property Name="FieldId" Type="Guid" Nullable="false" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Item" Relationship="IanTest_masterModel.ItemVersionedField" FromRole="VersionedField" ToRole="Item" />
+          <NavigationProperty Name="ItemVersion" Relationship="IanTest_masterModel.VersionedFieldItem" FromRole="VersionedField" ToRole="Item" />
+        </EntityType>
+        <Association Name="ItemVersionedField">
+          <End Type="IanTest_masterModel.Item" Role="Item" Multiplicity="1" />
+          <End Type="IanTest_masterModel.VersionedField" Role="VersionedField" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="VersionedField">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="SharedField">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ItemId" Type="Guid" Nullable="false" />
+          <Property Name="FieldId" Type="Guid" Nullable="false" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Item" Relationship="IanTest_masterModel.ItemSharedField" FromRole="SharedField" ToRole="Item" />
+        </EntityType>
+        <EntityType Name="UnversionedField">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="ItemId" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="ItemId" Type="Guid" Nullable="false" />
+          <Property Name="Language" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FieldId" Type="Guid" Nullable="false" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Updated" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Item" Relationship="IanTest_masterModel.ItemUnversionedField" FromRole="UnversionedField" ToRole="Item" />
+        </EntityType>
+        <Association Name="ItemSharedField">
+          <End Type="IanTest_masterModel.Item" Role="Item" Multiplicity="1" />
+          <End Type="IanTest_masterModel.SharedField" Role="SharedField" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SharedField">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ItemUnversionedField">
+          <End Type="IanTest_masterModel.Item" Role="Item" Multiplicity="1" />
+          <End Type="IanTest_masterModel.UnversionedField" Role="UnversionedField" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UnversionedField">
+              <PropertyRef Name="ItemId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="VersionedFieldItem">
+          <End Type="IanTest_masterModel.VersionedField" Role="VersionedField" Multiplicity="*" />
+          <End Type="IanTest_masterModel.Item" Role="Item" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Item">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="VersionedField">
+              <PropertyRef Name="FieldId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="IanTest_masterModelStoreContainer" CdmEntityContainer="MasterEntities">
+          <EntitySetMapping Name="Items">
+            <EntityTypeMapping TypeName="IanTest_masterModel.Item">
+              <MappingFragment StoreEntitySet="Items">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TemplateID" ColumnName="TemplateID" />
+                <ScalarProperty Name="MasterID" ColumnName="MasterID" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Histories">
+            <EntityTypeMapping TypeName="IanTest_masterModel.History">
+              <MappingFragment StoreEntitySet="History">
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="AdditionalInfo" ColumnName="AdditionalInfo" />
+                <ScalarProperty Name="TaskStack" ColumnName="TaskStack" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="ItemPath" ColumnName="ItemPath" />
+                <ScalarProperty Name="ItemVersion" ColumnName="ItemVersion" />
+                <ScalarProperty Name="ItemLanguage" ColumnName="ItemLanguage" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VersionedFields">
+            <EntityTypeMapping TypeName="IanTest_masterModel.VersionedField">
+              <MappingFragment StoreEntitySet="VersionedFields">
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="FieldId" ColumnName="FieldId" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="Language" ColumnName="Language" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SharedFields">
+            <EntityTypeMapping TypeName="IanTest_masterModel.SharedField">
+              <MappingFragment StoreEntitySet="SharedFields">
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="FieldId" ColumnName="FieldId" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UnversionedFields">
+            <EntityTypeMapping TypeName="IanTest_masterModel.UnversionedField">
+              <MappingFragment StoreEntitySet="UnversionedFields">
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="Created" ColumnName="Created" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="FieldId" ColumnName="FieldId" />
+                <ScalarProperty Name="Language" ColumnName="Language" />
+                <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

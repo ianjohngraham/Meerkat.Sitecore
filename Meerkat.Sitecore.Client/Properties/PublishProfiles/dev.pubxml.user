@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\IanTest\Website</_PublishTargetUrl>
+    <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ComponentArt.Web.UI.dll">
+      <publishTime>04/23/2014 20:55:06</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Edm.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.OData.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/de/System.Spatial.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Edm.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.OData.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/es/System.Spatial.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Edm.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.OData.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/fr/System.Spatial.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>04/23/2014 20:55:06</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Edm.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.OData.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/it/System.Spatial.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ITHit.WebDAV.Server.dll">
+      <publishTime>04/23/2014 20:55:06</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Edm.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.OData.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ja/System.Spatial.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Edm.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.OData.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ko/System.Spatial.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/Lucene.Net.dll">
+      <publishTime>04/23/2014 20:55:06</publishTime>
+    </File>
+    <File Include="bin/MeerKat.Sitecore.Client.dll">
+      <publishTime>07/04/2014 18:12:56</publishTime>
+    </File>
+    <File Include="bin/MeerKat.Sitecore.Client.pdb">
+      <publishTime>07/04/2014 18:12:56</publishTime>
+    </File>
+    <File Include="bin/MeerKat.Sitecore.ItemComparer.dll">
+      <publishTime>07/04/2014 18:12:55</publishTime>
+    </File>
+    <File Include="bin/MeerKat.Sitecore.ItemComparer.pdb">
+      <publishTime>07/04/2014 18:12:55</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
+      <publishTime>06/14/2014 09:13:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Owin.dll">
+      <publishTime>06/14/2014 09:13:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.dll">
+      <publishTime>06/14/2014 09:13:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Edm.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.OData.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Data.Services.Client.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>06/14/2014 09:13:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>06/14/2014 09:13:51</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>06/14/2014 09:13:51</publishTime>
+    </File>
+    <File Include="bin/Mvp.Xml.dll">
+      <publishTime>04/23/2014 20:55:06</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/14/2014 09:13:51</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>06/14/2014 09:13:51</publishTime>
+    </File>
+    <File Include="bin/RadEditor.Net2.dll">
+      <publishTime>04/23/2014 20:55:06</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Edm.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.OData.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/ru/System.Spatial.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/Sitecore.CompareItems.Client.dll">
+      <publishTime>05/30/2014 14:29:31</publishTime>
+    </File>
+    <File Include="bin/Sitecore.CompareItems.Client.pdb">
+      <publishTime>05/30/2014 14:29:31</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Kernel.dll">
+      <publishTime>06/14/2014 09:13:49</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Logging.dll">
+      <publishTime>04/23/2014 20:55:08</publishTime>
+    </File>
+    <File Include="bin/Sitecore.NVelocity.dll">
+      <publishTime>04/23/2014 20:55:08</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Update.dll">
+      <publishTime>06/14/2014 09:13:49</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Zip.dll">
+      <publishTime>04/23/2014 20:55:08</publishTime>
+    </File>
+    <File Include="bin/System.Spatial.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>04/23/2014 20:55:08</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Edm.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.OData.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/System.Spatial.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Edm.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.OData.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.Data.Services.Client.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/System.Spatial.resources.dll">
+      <publishTime>07/01/2014 20:20:39</publishTime>
+    </File>
+    <File Include="Meerkat.aspx">
+      <publishTime>07/02/2014 22:09:23</publishTime>
+    </File>
+    <File Include="PackageGenerationWizard.aspx">
+      <publishTime>07/01/2014 20:45:28</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/14/2014 09:13:48</publishTime>
+    </File>
+    <File Include="Scripts/Custom.js">
+      <publishTime>07/03/2014 20:20:51</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.1.js">
+      <publishTime>06/14/2014 09:13:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.1.min.js">
+      <publishTime>06/14/2014 09:13:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.1.min.map">
+      <publishTime>06/14/2014 09:13:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.10.4.custom.js">
+      <publishTime>06/22/2014 12:39:03</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.0.3.js">
+      <publishTime>06/14/2014 09:13:54</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.0.3.min.js">
+      <publishTime>06/14/2014 09:13:54</publishTime>
+    </File>
+    <File Include="Service References/CompareItems/Reference.datasvcmap">
+      <publishTime>06/14/2014 09:13:54</publishTime>
+    </File>
+    <File Include="Service References/CompareItems/service.edmx">
+      <publishTime>06/14/2014 09:13:54</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/07/2014 20:47:41</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
