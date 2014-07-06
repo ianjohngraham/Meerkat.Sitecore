@@ -3,23 +3,23 @@ Meerkat.Sitecore
 
 Allows Sitecore instance's items to be compared historically over HTTP.
 
-This project consists of a WCF data service (Meerkat.Sitecore.Service), a client Web application (Meerkat.Sitecore.Client) and a console application (Meerkat.Sitecore.SelfHost).
-Meerkat.Sitecore.Client can be deployed to a Sitecore webroot and is the interface for comparing instances.
+This project consists of a WCF data service (Meerkat.Sitecore.Service), a client web application (Meerkat.Sitecore.Client) and a console application (Meerkat.Sitecore.SelfHost).
 
-The client web applciation needs to communicate with the WCF Data Service, which could be on the same computer or somewhere 
-remote. You can run the service using the Selfhost Console App and specify the port you want to run it on. 
-Alternatively you can set the service to run in IIS.
+You can find all the information you need here
+
+http://coreblimey.azurewebsites.net/?p=1971
 
 
-MPORTANT - Post Installation Notes
+IMPORTANT - Pre Installation Notes
 -----------------------------------
-After installation you must add the following non-invasive changes to your Sitecore Web.Config.
+Before installation you must add the following non-invasive changes to your Sitecore Web.Config.
 
 Add the following binding redirects in your <runtime> tag - this is needed for signalr to work
 
 
- &lt;assemblyIdentity name=&quot;Microsoft.Owin&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; culture=&quot;neutral&quot;&gt;
+    &lt;assemblyBinding&gt;
       &lt;dependentAssembly&gt;
+        &lt;assemblyIdentity name=&quot;Microsoft.Owin&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; culture=&quot;neutral&quot; /&gt;
         &lt;bindingRedirect oldVersion=&quot;0.0.0.0-2.0.2.0&quot; newVersion=&quot;2.0.2.0&quot; /&gt;
       &lt;/dependentAssembly&gt;
       &lt;dependentAssembly&gt;
@@ -31,7 +31,6 @@ Add the following binding redirects in your <runtime> tag - this is needed for s
         &lt;bindingRedirect oldVersion=&quot;0.0.0.0-2.0.3.0&quot; newVersion=&quot;2.0.3.0&quot; /&gt;
       &lt;/dependentAssembly&gt;
     &lt;/assemblyBinding&gt;
-
 
 
 Then the entry /signalr to the end of the  IgnoreUrlPrefixes setting
