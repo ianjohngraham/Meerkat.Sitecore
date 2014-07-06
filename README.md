@@ -38,11 +38,10 @@ Then the entry /signalr to the end of the  IgnoreUrlPrefixes setting
 
 VERY IMPORTANT
 -----------------------------
-To compare items you need to download and run the Console Application (Meerkat.Sitecore.SelfHost.exe). 
+To compare items you need to download and run the Console Application (Meerkat.Sitecore.SelfHost.exe) 
 using Administrator Privelages on the server where your Sitecore instances 
 live!!
 
-Ensure the port you choose is not blocked by Windows Firewall and you need to manually create a rule to allow the service to be run.
-
+Ensure the port you choose is not blocked by Windows Firewall!
 
 
