@@ -5,16 +5,16 @@ Allows Sitecore instance's items to be compared historically over HTTP.
 
 This project consists of a WCF data service (Meerkat.Sitecore.Service), a client web application (Meerkat.Sitecore.Client) and a console application (Meerkat.Sitecore.SelfHost).
 
-You can find all the information you need here
+You can find all the information you need here:
 
 http://coreblimey.azurewebsites.net/?p=1971
 
 
-IMPORTANT - Pre Installation Notes
+IMPORTANT - Pre-Installation Notes
 -----------------------------------
 Before installation you must add the following non-invasive changes to your Sitecore Web.Config.
 
-Add the following binding redirects in your runtime tag - this is needed for signalr to work
+Add the following binding redirects in your runtime tag - this is needed for Signalr to work
 
 
   &lt;assemblyBinding&gt;
