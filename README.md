@@ -14,7 +14,7 @@ IMPORTANT - Pre Installation Notes
 -----------------------------------
 Before installation you must add the following non-invasive changes to your Sitecore Web.Config.
 
-Add the following binding redirects in your <runtime> tag - this is needed for signalr to work
+Add the following binding redirects in your runtime tag - this is needed for signalr to work
 
 
   &lt;assemblyBinding&gt;
